@@ -1,0 +1,43 @@
+        go to cmd and do this----
+
+1. create heroku account
+2. install git
+3. heroku install for windows
+4. heroku login
+5. go to your project
+6. create virtual env
+7. activate venv
+8. pip install -r requirements.txt 
+
+9. configure django app for heroku-----
+10. create Procfile and add this content
+    web: gunicorn myproject.wsgi
+11. pip install gunicorn
+12. pip install django-heroku
+13. import django-heroku  in your settings.py file
+14. Then add the following to the bottom of settings.py:
+     # Activate Django-Heroku.
+     django_heroku.settings(locals())
+15. pip freeze> requirements.txt
+16. heroku create <app_name>
+17. go to your heroku dashboard and refresh
+18. git init
+19. git add --all
+20. git commit -m "first commit"
+21. heroku git:remote -a <app_name>
+22. git push heroku master 
+
+congrates your app is live
+but admin panel is not working to resolve this do this
+
+23.heroku run bash
+24. ls
+25. python manage.py migrate
+26. python manage.py createsuperuser
+and then exit to exit command
+
+for any update in django app
+  git status
+  git add --all
+  git commit -m "details"
+  git push heroku master
