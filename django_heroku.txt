@@ -30,7 +30,7 @@
 congrates your app is live
 but admin panel is not working to resolve this do this
 
-23.heroku run bash
+23.heroku run bash (if two app then run    "heroku run base --app appname")
 24. ls
 25. python manage.py migrate
 26. python manage.py createsuperuser
