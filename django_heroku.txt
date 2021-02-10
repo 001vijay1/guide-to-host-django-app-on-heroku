@@ -14,7 +14,7 @@
     web: gunicorn myproject.wsgi
 11. pip install gunicorn
 12. pip install django-heroku
-13. import django-heroku  in your settings.py file
+13. import django_heroku  in your settings.py file
 14. Then add the following to the bottom of settings.py:
      # Activate Django-Heroku.
      django_heroku.settings(locals())
